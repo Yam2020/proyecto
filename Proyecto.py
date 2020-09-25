@@ -4,6 +4,8 @@
 
 #Nota Futura: Cuando me enseñen "listas" planeao agrupar mis respuestas, para simplificar el codigo.
 
+#Hola mundo 
+
 #Lista de 7 preguntas (notas)
 #Funciones
 #If else, para saber si la respuesta es correcta o incorrecta
