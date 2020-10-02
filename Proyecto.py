@@ -1,21 +1,37 @@
 #Yamile Saray García Rivera
 #A01703397
-#Avance_3_proyecto
-#Nota Avance 3: Como en el segundo avance del proyecto inclui funciones, me comento el profesor que podia mandarlo de nuevo el mismo avance especificando el porque se manda de nuevo. 
+#Avance_4_proyecto
 
 #Nota Futura: Cuando me enseñen "listas" planeao agrupar mis respuestas, para simplificar el codigo.
-#Lista de  de 7 preguntas (notas)
+
+#Hola mundo 
+
+#Lista de 7 preguntas (notas)
+#Funciones
+#If else, para saber si la respuesta es correcta o incorrecta
 #Ciclo while la cantidad de preguntas sean < = 7
-#If else, ara saber si la respuesta es correcta o incorrecta
-# Una variable contador, contador_respuesta_correcta
+
 
 #Funcion para mostrar preguntas
 #No regresa ningun valor (return)
 def mostrar_pregunta (numero_pregunta):
     #aqui todo el codigo
-    print ("¿Pregunta " + str(numero_pregunta) + "?")
-    print ("¡Animo tu puedes!")
-
+    if numero_pregunta == 1:
+        print("¿Pregunta " + str(numero_pregunta) + ": Nombre de la nota que se encuentra en el tercer espacio del pentagrama? ")
+    if numero_pregunta == 2:
+        print ("Pregunta " + str(numero_pregunta) + ": Nombre de la nota que se encuentra en la cuarta línea del pentagrama? ")
+    if numero_pregunta == 3:
+        print("Pregunta " + str(numero_pregunta) + ": Nombre de la nota que se encuentra en el cuarto espacio del pentagrama? ")
+    if numero_pregunta == 4:
+        print("Pregunta " + str(numero_pregunta) + ": Nombre de la nota que se encuentra en el primer espacio del pentagrama? ")
+    if numero_pregunta == 5:
+        print ("Pregunta " + str(numero_pregunta) + ": Nombre de la nota que se encuentra en la segunda línea del pentagrama? ")
+    if numero_pregunta == 6:
+        print("Pregunta " + str(numero_pregunta) + ": Nombre de la nota que se encuentra en el segundo espacio del pentagrama? ")
+    if numero_pregunta == 7:
+        print("Pregunta " + str(numero_pregunta) + ": Nombre de la nota que se encuentra en la tercer línea del pentagrama? ")
+        
+        
 #Regresa verdadero en caso de que la respuesta sea correcta
 #Regresa falso, si es incorrecta
 def evaluar_respuesta (numero_pregunta, respuesta):
@@ -30,7 +46,7 @@ def evaluar_respuesta (numero_pregunta, respuesta):
         
         else:
             booRespuesta = False  #No es necesario ya que esta inicializando en falso
-            print("Respuesta incorrecta")
+            print("Respuesta incorrecta, intentalo de nuevo")
             
         
     if numero_pregunta == 2:
@@ -41,7 +57,7 @@ def evaluar_respuesta (numero_pregunta, respuesta):
         
         else:
             booRespuesta = False
-            print("Respuesta incorrecta")
+            print("Respuesta incorrecta, intentalo de nuevo")
             
             
     if numero_pregunta == 3:
@@ -52,7 +68,7 @@ def evaluar_respuesta (numero_pregunta, respuesta):
         
         else:
             booRespuesta = False
-            print("Respuesta incorrecta")
+            print("Respuesta incorrecta, intentalo de nuevo")
             
     
     if numero_pregunta == 4:
@@ -63,7 +79,7 @@ def evaluar_respuesta (numero_pregunta, respuesta):
         
         else:
             booRespuesta = False
-            print("Respuesta incorrecta")
+            print("Respuesta incorrecta, intentalo de nuevo")
             
             
     if numero_pregunta == 5:
@@ -74,7 +90,7 @@ def evaluar_respuesta (numero_pregunta, respuesta):
         
         else:
             booRespuesta = False
-            print("Respuesta incorrecta")
+            print("Respuesta incorrecta, intentalo de nuevo")
             
             
     if numero_pregunta == 6:
@@ -85,7 +101,7 @@ def evaluar_respuesta (numero_pregunta, respuesta):
         
         else:
             booRespuesta = False
-            print("Respuesta incorrecta")
+            print("Respuesta incorrecta, intentalo de nuevo")
       
     if numero_pregunta == 7:
         if respuesta == "si":
@@ -95,7 +111,7 @@ def evaluar_respuesta (numero_pregunta, respuesta):
         
         else:
             booRespuesta = False
-            print("Respuesta incorrecta")
+            print("Respuesta incorrecta, intentalo de nuevo")
             
     
     return (booRespuesta)
@@ -108,79 +124,19 @@ print ("***")
 print ("***")
 print ("")
 
-#Declaramos variable que cuenta respuesta correctas.
-contador_respuesta_correcta = 0
+#Declaramos variable que cuenta las preguntas. 
+numero_de_pregunta = 1
 
-#Pregunta 1 
-mostrar_pregunta (1)
-dato_entrada_1 = input("Nombre de la nota que se encuentra en el tercer espacio del pentagrama : ")
-
-booAlmacena = evaluar_respuesta (1, dato_entrada_1)
-
-if booAlmacena == True:
-    contador_respuesta_correcta = contador_respuesta_correcta + 1
-
-
-#Pregunta 2
-mostrar_pregunta (2)
-dato_entrada_1 = input("Nombre de la nota que se encuentra en la cuarta línea del pentagrama : ") 
-
-booAlmacena = evaluar_respuesta (2, dato_entrada_1)
-
-if booAlmacena == True:
-    contador_respuesta_correcta = contador_respuesta_correcta + 1
-
-
-
-#Pregunta 3
-mostrar_pregunta (3)
-dato_entrada_1 = input("Nombre de la nota que se encuentra en el cuarto espacio del pentagrama : ") 
-
-booAlmacena = evaluar_respuesta (3, dato_entrada_1)
-
-if booAlmacena == True:
-    contador_respuesta_correcta = contador_respuesta_correcta + 1
-
-
-
-#Pregunta 4
-mostrar_pregunta (4)
-dato_entrada_1 = input("Nombre de la nota que se encuentra en el primer espacio del pentagrama : ") 
-
-booAlmacena = evaluar_respuesta (4, dato_entrada_1)
-
-if booAlmacena == True:
-    contador_respuesta_correcta = contador_respuesta_correcta + 1
-
-
-
-#Pregunta 5
-mostrar_pregunta (5)
-dato_entrada_1 = input("Nombre de la nota que se encuentra en la segunda línea del pentagrama : ") 
-
-booAlmacena = evaluar_respuesta (5, dato_entrada_1)
-
-if booAlmacena == True:
-    contador_respuesta_correcta = contador_respuesta_correcta + 1
-
-#Pregunta 6
-mostrar_pregunta (6)
-dato_entrada_1 = input("Nombre de la nota que se encuentra en el segundo espacio del pentagrama : ") 
-
-booAlmacena = evaluar_respuesta (6, dato_entrada_1)
-
-if booAlmacena == True:
-    contador_respuesta_correcta = contador_respuesta_correcta + 1
+#Empezamos con un ciclo while, para que muestra las 7 preguntas.  
+while numero_de_pregunta <= 7:
     
-#Pregunta 7
-mostrar_pregunta (7)
-dato_entrada_1 = input("Nombre de la nota que se encuentra en la tercer línea del pentagrama : ") 
-
-booAlmacena = evaluar_respuesta (7, dato_entrada_1)
-
-if booAlmacena == True:
-    contador_respuesta_correcta = contador_respuesta_correcta + 1
-
-
-#Cuando trae contador_respuesta_correcta nos dice cuantas veces lo hizo bien el usuario. 
-print (" Total de respuestas correctas " + str(contador_respuesta_correcta))
+    #Se muestra al usuario la pregunta, mandando a llamar la función mostrar_pregunta.
+    mostrar_pregunta(numero_de_pregunta)
+    #El usuario introduce el dato (Entrada).
+    dato_entrada_respuesta = input ("Intruduce la respuesta correcta: ")
+    #Se manda a llamar la función evaluar_respuesta, esta variable booAlmacena guarda la evaluación.
+    booAlmacena = evaluar_respuesta (numero_de_pregunta, dato_entrada_respuesta)
+    
+    #Ahora llamamos la variable que contiende la función evaluar_respuesta, para evaluar si es verdadera prosiga con la siguiente pregunta. 
+    if booAlmacena == True:
+        numero_de_pregunta = numero_de_pregunta + 1     
