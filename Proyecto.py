@@ -1,7 +1,9 @@
 #Yamile Saray García Rivera
 #A01703397
-#Avance 2_proyecto
+#Avance_3_proyecto
+#Nota Avance 3: Como en el segundo avance del proyecto inclui funciones, me comento el profesor que podia mandarlo de nuevo el mismo avance especificando el porque se manda de nuevo. 
 
+#Nota Futura: Cuando me enseñen "listas" planeao agrupar mis respuestas, para simplificar el codigo.
 #Lista de  de 7 preguntas (notas)
 #Ciclo while la cantidad de preguntas sean < = 7
 #If else, ara saber si la respuesta es correcta o incorrecta
@@ -182,5 +184,3 @@ if booAlmacena == True:
 
 #Cuando trae contador_respuesta_correcta nos dice cuantas veces lo hizo bien el usuario. 
 print (" Total de respuestas correctas " + str(contador_respuesta_correcta))
-
-
